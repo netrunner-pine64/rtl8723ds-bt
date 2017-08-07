@@ -1,4 +1,4 @@
 #!/usr/bin/make -f
 %:
-	dh $@ --sourcedirectory=rtk_hciattach
+	dh $@ --sourcedirectory=rtk_hciattach --with systemd
 
