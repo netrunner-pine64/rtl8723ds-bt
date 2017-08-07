@@ -1,0 +1,14 @@
+Source: rtl8723ds-bt
+Section: misc
+Priority: optional
+Maintainer: Rohan Garg <rohan@garg.io>
+Build-Depends: debhelper (>=9)
+Standards-Version: 3.9.6
+Homepage: https://github.com/NextThingCo/rtl8723ds_bt
+
+Package: rtl8723ds-bt
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: support package for enabling bluetooth on rtl8723ds-bt devices
+ This package contains the required setup to enable bluetooth on devices with
+ the rtl8723ds chipset
