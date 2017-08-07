@@ -7,8 +7,8 @@ Standards-Version: 3.9.6
 Homepage: https://github.com/NextThingCo/rtl8723ds_bt
 
 Package: rtl8723ds-bt
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Architecture: arm64
+Depends: ${shlibs:Depends}, ${misc:Depends}, pine64-linux-image
 Description: support package for enabling bluetooth on rtl8723ds-bt devices
  This package contains the required setup to enable bluetooth on devices with
  the rtl8723ds chipset
