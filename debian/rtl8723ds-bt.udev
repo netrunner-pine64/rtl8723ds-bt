@@ -1,0 +1,1 @@
+ACTION=="add", DRIVERS=="8723bs_vq0", TAG+="systemd", ENV{SYSTEMD_WANTS}+="rtl8723ds-bt.service"

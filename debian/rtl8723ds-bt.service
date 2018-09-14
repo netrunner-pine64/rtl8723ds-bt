@@ -2,6 +2,7 @@
 Description=Realtek rtl8723ds bluetooth hciattach
 After=systemd-modules-load.service local-fs.target
 Before=bluetooth.target
+ConditionPathExists=/dev/ttyS1
 
 [Service]
 ExecStart=/usr/sbin/rtk_hciattach -n -s 115200 /dev/ttyS1 rtk_h5
