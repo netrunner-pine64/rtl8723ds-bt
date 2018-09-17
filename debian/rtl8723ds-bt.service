@@ -5,6 +5,7 @@ Before=bluetooth.target
 ConditionPathExists=/dev/ttyS1
 
 [Service]
+ExecStartPre=/usr/sbin/rfkill unblock bluetooth
 ExecStart=/usr/sbin/rtk_hciattach -n -s 115200 /dev/ttyS1 rtk_h5
 
 [Install]
